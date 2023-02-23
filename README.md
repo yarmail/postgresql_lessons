@@ -28,7 +28,7 @@ PostgreSQL 13.10, pgAdmin v.4.30
 </details>
 
 Темы:<br>
-~ <a href="https://github.com/yarmail/postgresql_lessons/info/function/FUNCTION.md"> Функции - перейти в раздел</a><br>
+~ <a href="info/function/FUNCTION.md"> Функции - перейти в раздел</a><br>
 Определение функции, краткий синтаксис, скалярные функции, функции с входящими 
 и исходящими аргументами, возврат множества строк
 
