@@ -1,4 +1,4 @@
-<a href="https://github.com/yarmail/postgresql_lessons/README.md">вернуться к оглавлению</a><br>
+<a href="/../../README.md">вернуться к оглавлению</a><br>
 
 Тема: Функции <br><br>
 
