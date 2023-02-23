@@ -1,4 +1,4 @@
-<a href="README.md">вернуться к оглавлению</a><br>
+<a href="https://github.com/yarmail/postgresql_lessons/README.md">вернуться к оглавлению</a><br>
 
 Тема: Функции <br><br>
 
@@ -71,6 +71,7 @@ DEFAULT value - некоторым аргументам мы можем прис
 <summary>Результат выполнения скрипта в IDE</summary>
 <img src="example_05.png">
 </details>
+
 Пример 6. Использование функции RETURNS SETOF table 
 (<a href="example_06.sql">example_06.sql</a>)
 
