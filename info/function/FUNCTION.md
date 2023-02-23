@@ -26,7 +26,9 @@ $$ LANGUAGE lang
 
 **_Скалярные функции_**<br>
 Скалярные функции в качестве возврата имеют единственное значение <br>
-Пример 2. Использование скалярной функции (файл example_02.sql).
+Пример 2. Использование скалярной функции 
+(файл <a href="example_02.sql">example_02.sql</a>).
+
 <details>
 <summary>Результат</summary>
 <img src="example_02.png">
@@ -39,12 +41,16 @@ $$ LANGUAGE lang
 но их лучше не использовать, VARIADIC - массив входящих параметров, 
 DEFAULT value - некоторым аргументам мы можем присваивать значения 
 по умолчанию<br> 
-Пример 3. Использование функции с входящими аргументами (example_03.sql)
+Пример 3. Использование функции с входящими аргументами 
+(<a href="example_03.sql">example_03.sql</a>)
+
 <details>
 <summary>Результат</summary>
 <img src="example_03.png">
 </details>
-Пример 4. Использование функции с исходящими аргументами (example_04.sql)
+Пример 4. Использование функции с исходящими аргументами 
+(<a href="example_04.sql">example_04.sql</a>)
+
 <details>
 <summary>Результат выполнения скрипта в IDE</summary>
 <img src="example_04.png">
@@ -58,12 +64,16 @@ DEFAULT value - некоторым аргументам мы можем прис
 желательно не использовать без необходимости)<br>
 ~ RETURNS TABLE (column_name data_type, ...) тоже самое, что и SETOF table,
 но имеем возможность явно указать столбцы <br>
-Пример 5. Использование функции RETURNS SETOF data_type (example_05.sql)
+Пример 5. Использование функции RETURNS SETOF data_type 
+(<a href="example_05.sql">example_05.sql</a>)
+
 <details>
 <summary>Результат выполнения скрипта в IDE</summary>
 <img src="example_05.png">
 </details>
-Пример 6. Использование функции RETURNS SETOF table (example_06.sql)
+Пример 6. Использование функции RETURNS SETOF table 
+(<a href="example_06.sql">example_06.sql</a>)
+
 <details>
 <summary>Результат выполнения скрипта в IDE</summary>
 <img src="example_06.png">
