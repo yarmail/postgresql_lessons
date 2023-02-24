@@ -14,7 +14,7 @@ RETURNS data_type AS $$
 --logic
 $$ LANGUAGE lang
 ```
-Также можно использовать выражение CREATE OR REPLACE, и в такой форме используется чаще <br>
+Также можно использовать выражение CREATE OR REPLACE <br>
 Пример 1. Использование простой функции <br>
 (файл <a href="example_01.sql">example_01.sql</a>) в этой папке. <br>
 В данном случае используется диалект SQL (language SQL)
@@ -54,7 +54,7 @@ DEFAULT value - некоторым аргументам мы можем прис
 <details>
 <summary>Результат выполнения скрипта в IDE</summary>
 <img src="example_04.png">
-</details>
+</details> <br>
 
 **_Возврат множества строк_**<br>
 Есть несколько вриантов, среди них:<br>
@@ -78,4 +78,46 @@ DEFAULT value - некоторым аргументам мы можем прис
 <details>
 <summary>Результат выполнения скрипта в IDE</summary>
 <img src="example_06.png">
-</details>
+</details> <br>
+
+**_Функции с использованием PL/pgSQL - введение_**<br>
+Синтаксис:
+```
+CREATE FUNCTION func_name([arg1, arg2])
+RERURNS data_type AS $$
+BEGIN
+--logic
+END;
+&& LANGUAGE plpgsql;
+```
+Особенности: <br>
+~ BEGIN - END; - оборачивает тело метода <br>
+~ plpgsql - можно создавать переменые - в SQL - нет <br>
+~ прогон циклов, развитая логика, можно выбрасывать исключения <br>
+~ возврат значений через RETURN (вместо SELECT) или RETURN QUERY
+(в дополнение к SELECT) <br>
+
+**_PL/pgSQL - возврат и присвоение_**<br>
+Повторим скалярные функции, но уже с помощью plpgsql <br>
+Пример 7. plpgsql сумма значений строк 
+<details>
+<summary>Результат выполнения скрипта в IDE</summary>
+<img src="example_07.png">
+</details> <br>
+Теперь повторим функции с исходящими аргументами, но тоже с plpgsql <br>
+Пример 8. plpgsql функция с исходящими аргументами 
+<details>
+<summary>Результат выполнения скрипта в pgAdmin</summary>
+<img src="example_08.png">
+</details> <br>
+Присвоение может выполняться 2 способами: <br>
+result = x + y;<br>
+result := x + y;<br>
+Некоторые программисты считают что := более наглядно и 
+улучшает читаемость кода <br>
+Пример 9. plpgsql возвращаем RETURNS SETOF table
+(возврат множества строк с использованием RETURN QUERY)
+<details>
+<summary>Результат выполнения скрипта в Idea</summary>
+<img src="example_09.png">
+</details> <br>
