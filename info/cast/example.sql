@@ -26,10 +26,11 @@ SELECT type_testing(CAST(0.5 AS int));
 
 SELECT type_testing('1.5'::numeric::int);
 -- Output: 2
--- Можно преобразовать Строку в число через numeric
+-- Можно преобразовать строку в число через numeric
 
 SELECT 'abc' || 1;
 -- Output: abc1
 
 SELECT ' 10 ' = 10;
 -- Output: true
+-- приводится к числу и сравнивается левая сторона
