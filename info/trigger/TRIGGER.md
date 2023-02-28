@@ -42,9 +42,13 @@ AFTER-триггера (или из BEFORE и из AFTER триггеров на
 => можно возвращать NULL. Если построчный AFTER-триггер или триггер на утверждение
 "хочет" отменить операцию => raise exception <br> <br>
 
-Практическое задание 1: логгировать временную 
-метку последнего изменения строки (exercise_01)
-(файл <a href="exercise_01.sql">exercise_01.sql</a>)
+Практическое задание 1:
+(файл <a href="exercise_01.sql">exercise_01.sql</a>)<br>
+ Логгировать временную метку последнего изменения строки 
+<details>
+<summary>Результат теста в IDE</summary>
+<img src="exercise_01.png">
+</details>
 
 <br><br>
 **_Триггер на утверждения_**<br>
@@ -78,3 +82,11 @@ DISABLE TRIGGER trigger_name;
 ALTER TABLE table_name <br>
 DISABLE TRIGGER ALL;
 <br><br>
+
+Практическое задание 2:
+(файл <a href="exercise_02.sql">exercise_02.sql</a>)<br>
+Логгировать временную метку последнего изменения строки 
+<details>
+<summary>Результат теста в IDE</summary>
+<img src="exercise_02.png">
+</details>
