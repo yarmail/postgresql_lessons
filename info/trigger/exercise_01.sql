@@ -48,5 +48,3 @@ INSERT INTO exercise01 (num) VALUES (2);
 SELECT pg_sleep(1);
 INSERT INTO exercise01 (num) VALUES (3);
 SELECT * FROM exercise01;
-
-
